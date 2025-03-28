@@ -1,0 +1,96 @@
+@model TeamGenerator2.Models.Names
+
+@{
+    ViewData["Title"] = "Groups";
+
+    // Store the total number of names in the list
+    var totalNames = Model.NameList.Count;
+
+    // Store the size of each team
+    var teamSize = Model.TeamSize;
+
+    // Calculate the number of full teams we can create
+    var numberOfFullTeams = totalNames / teamSize;
+
+    // Calculate the remainder (extra names to be distributed)
+    var remainder = totalNames % teamSize;
+
+    // Initialize an index to keep track of the current name in the list
+    int nameIndex = 0;
+
+    // Determine if the remainder is large enough to create a new team
+    var createNewTeam = remainder >= teamSize - 1;
+
+    // If we need to create a new team, increase the number of full teams by 1
+    if (createNewTeam)
+    {
+        numberOfFullTeams += 1;
+        remainder = 0; // No need to distribute the remainder anymore, it forms a new team
+    }
+}
+
+<div class="row">
+    @for (int i = 0; i < numberOfFullTeams; i++)
+    {
+        // Start with the basic team size
+        var currentTeamSize = teamSize;
+
+        // If there are remaining names and we're not creating a new team, distribute the remainder
+        if (!createNewTeam && remainder > 0)
+        {
+            currentTeamSize += 1;
+            remainder--;  // Reduce the remainder as we distribute names
+        }
+
+        <div class="col-md-4 mb-3">
+            <!-- Create a card for each team -->
+            <div class="card" style="width: 100%; animation-delay: @(i * 0.1)s;">
+                <div class="group">
+                    <div class="groupContent">
+                        <!-- Display the team number -->
+                        <h5>Team @(i + 1)</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        @for (int j = 0; j < currentTeamSize && nameIndex < totalNames; j++)
+                        {
+                            <!-- Display each name for the current team -->
+                            <li class="list-group-item">@Model.NameList[nameIndex]</li>
+                            <!-- Increment the name index so the next name in the list is assigned -->
+                            nameIndex++;
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Handle any remaining names if we decided to create a new team -->
+    @if (createNewTeam && nameIndex < totalNames)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 100%; animation-delay: @(numberOfFullTeams * 0.1)s;">
+                <div class="group">
+                    <div class="groupContent">
+                        <h5>Team @(numberOfFullTeams + 1)</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        @for (int j = nameIndex; nameIndex < totalNames; j++)
+                        {
+                            <li class="list-group-item">@Model.NameList[nameIndex]</li>
+                            nameIndex++;
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<br>
+<div class="row">
+    <!-- Button to name the teams, triggering the getTeamName function -->
+    <div class="col-md-2"><button id="teamNames" class="buttons" onclick="getTeamName()">Name Teams</button></div>
+    
+    <!-- Button to go back to the homepage and create more teams -->
+    <div class="col-md-2"><button class="buttons"><a href="/Home" id="create">Create More Teams</a></button></div>
+</div>

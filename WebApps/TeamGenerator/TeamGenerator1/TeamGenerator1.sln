@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamGenerator2", "TeamGenerator2\TeamGenerator2.csproj", "{1F041908-EDAE-4F82-B6BB-BF1C00B3B6C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamGenerator_Tests", "TeamGenerator_Tests\TeamGenerator_Tests.csproj", "{40CBC660-5B91-4CF9-8439-427CFBFBEDC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F041908-EDAE-4F82-B6BB-BF1C00B3B6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F041908-EDAE-4F82-B6BB-BF1C00B3B6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F041908-EDAE-4F82-B6BB-BF1C00B3B6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F041908-EDAE-4F82-B6BB-BF1C00B3B6C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40CBC660-5B91-4CF9-8439-427CFBFBEDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40CBC660-5B91-4CF9-8439-427CFBFBEDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40CBC660-5B91-4CF9-8439-427CFBFBEDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40CBC660-5B91-4CF9-8439-427CFBFBEDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

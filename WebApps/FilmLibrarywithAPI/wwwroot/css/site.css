@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#results-container .row {
+    min-height: 200px; 
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+#results-container img {
+    max-height: 180px; 
+    object-fit: cover; 
+}
+
+#results-container .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tmdblogo {
+  width: 8%;
+  float: right;
+}
+
+#error-message {
+  color: red; 
+  display: none;
+}

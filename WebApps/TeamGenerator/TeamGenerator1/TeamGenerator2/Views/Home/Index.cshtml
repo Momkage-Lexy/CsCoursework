@@ -1,0 +1,33 @@
+﻿@model TeamGenerator2.Models.Names
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row g-0 formRow">
+    <div class="col-md-6 imageCol">
+        <!-- Image Source: https://www.freepik.com/free-photo/hand-gesture-expressing-different-feelings_36298765.htm -->
+        <img src="~/app_data/hand-gesture-expressing-different-feelings.jpg" class="" alt="Hand gesture expressing different feelings" /> 
+    </div>
+    <div class="col-md-6 formDiv">
+        <form asp-action="Groups" method="post">
+            <div class="form-group">
+                <h2 class="intro">Welcome!</h2>
+                <p class="intro" id="introText">Enter your team info below: </p>
+                <label asp-for="NameInput" class="formLabel">Names (one per line):</label><br>
+                <textarea asp-for="NameInput" class="formInput" id="namesInput" rows="5" data-val="true" data-val-required="Please enter your names"></textarea>
+                <span asp-validation-for="NameInput" class="validation"></span>
+            </div>
+            <br>
+            <div class="teamFields">
+                <label asp-for="TeamSize" class="formLabel">Team Size:</label><br>
+                <input asp-for="TeamSize" class="formInput" id="teamsInput" data-val="true" data-val-required="Please enter Team size" />
+                <span asp-validation-for="TeamSize" class="validation"></span>
+            </div>
+            <br>
+            <button type="submit" class="formButton">Get Teams</button>
+        </form>
+        <div asp-validation-summary="ModelOnly" class="validation"></div>
+    </div>
+</div>
+
+
