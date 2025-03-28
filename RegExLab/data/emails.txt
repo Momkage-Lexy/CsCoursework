@@ -1,0 +1,12 @@
+andersc@wou.edu 
+cander@ieor.berkeley.edu 
+Cecil_Terwilliger@Princeton.edu 
+number1@enterprise.edu 
+bobo.burns@springfield.edu 
+
+smith@cambridge.edu.uk 
+wou.edu 
+gates@microsoft.com 
+host!user@wou.edu 
+user@foo.eduu
+user@foo .edu

@@ -1,0 +1,94 @@
+@model Streaming1.Models.Show
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Show</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="JustWatchShowId" class="control-label"></label>
+                <input asp-for="JustWatchShowId" class="form-control" />
+                <span asp-validation-for="JustWatchShowId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShowTypeId" class="control-label"></label>
+                <select asp-for="ShowTypeId" class="form-control" asp-items="ViewBag.ShowTypeId"></select>
+                <span asp-validation-for="ShowTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseYear" class="control-label"></label>
+                <input asp-for="ReleaseYear" class="form-control" />
+                <span asp-validation-for="ReleaseYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgeCertificationId" class="control-label"></label>
+                <select asp-for="AgeCertificationId" class="form-control" asp-items="ViewBag.AgeCertificationId"></select>
+                <span asp-validation-for="AgeCertificationId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Runtime" class="control-label"></label>
+                <input asp-for="Runtime" class="form-control" />
+                <span asp-validation-for="Runtime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seasons" class="control-label"></label>
+                <input asp-for="Seasons" class="form-control" />
+                <span asp-validation-for="Seasons" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImdbId" class="control-label"></label>
+                <input asp-for="ImdbId" class="form-control" />
+                <span asp-validation-for="ImdbId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImdbScore" class="control-label"></label>
+                <input asp-for="ImdbScore" class="form-control" />
+                <span asp-validation-for="ImdbScore" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImdbVotes" class="control-label"></label>
+                <input asp-for="ImdbVotes" class="form-control" />
+                <span asp-validation-for="ImdbVotes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TmdbPopularity" class="control-label"></label>
+                <input asp-for="TmdbPopularity" class="form-control" />
+                <span asp-validation-for="TmdbPopularity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TmdbScore" class="control-label"></label>
+                <input asp-for="TmdbScore" class="form-control" />
+                <span asp-validation-for="TmdbScore" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,14 @@
+
+    /* Ensure that the images appear in a single line */
+    #carousel {
+        white-space: nowrap;
+        overflow: hidden;
+        margin-left: 500px;
+    }
+
+    /* Style for individual carousel images */
+    .carousel-image {
+        max-width: 100%; /* Set the width of each image */
+        display: inline-block; /* Display images in a single line */
+    }
+

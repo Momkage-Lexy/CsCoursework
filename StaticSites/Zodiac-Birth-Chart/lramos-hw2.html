@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lexy's Astrology</title>
+    <link rel="stylesheet" type="text/css" href="lramos-hw2-stylesheet.css" /> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1>Lexy's Astrology</h1>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row"><!--Main page info-->
+            <div class="col-md-4"><!--TBD-->
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li><a href="">Aries</a></li>
+                    <li><a href="">Taurus</a></li>
+                    <li><a href="">Gemini</a></li>
+                    <li><a href="">Cancer</a></li>
+                    <li><a href="">Leo</a></li>
+                    <li><a href="">Virgo</a></li>
+                    <li><a href="">Libra</a></li>
+                    <li><a href="">Scorpio</a></li>
+                    <li><a href="">Sagittarius</a></li>
+                    <li><a href="">Capricorn</a></li>
+                    <li><a href="">Aquarius</a></li>
+                    <li><a href="">Pisces</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4""><!--forms intake-->
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Lexy Ramos"><br><br>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob"><br><br>
+                    <label for="tob">Time of Birth:</label><br>
+                    <input type="time" id="tob" name="tob"><br>
+                    <input type="checkbox" id="no-tob" name="no-tob">Unknown Time<br><br>
+                    <label for="location">Birthplace:</label><br>
+                    <input type="text" id="location" name="location" value="Enter city name"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="col-md-4"><!--birthchart reveal-->
+                <img src="images/zodiacwheel.jpg" alt="Zodiac wheel of just the zodiac symbols - https://www.freepik.com/free-vector/art-nouveau-zodiac-signs-vector-remixed-from-artworks-alphonse-maria-mucha_17433494.htm#page=3&query=zodiac%20wheel&position=36&from_view=search&track=ais&uuid=5bef5dc3-ad1d-495c-9b13-57a6bd240c26 Image by rawpixel.com on Freepik"
+                    title="Zodiac wheel of just the zodiac symbols, Image by rawpixel.com on Freepik"
+                    style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row"><!--scroll gallery-->
+            <div class="col-md-12">
+                <div id="carousel" class="scroll-container slider">
+                    <img class="carousel-image" src="images/Aries.jpg" alt="aries symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="aries symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/taurus.jpg" alt="tauras symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="taurus symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/gemini.jpg" alt="gemini symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="gemini symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/cancer.jpg" alt="cancer symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="cancer symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/leo.jpg" alt="leo symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="leo symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/virgo.jpg" alt="virgo symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="virgo symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/scorpio.jpg" alt="scorpio symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="scorpio symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/sag.jpg" alt="sagittarius symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="sagittarius symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/cap.jpg" alt="capricorn symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="capricorn symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/aqua.jpg" alt="aquarius symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="aquarius symbol, Image by Freepik">
+                    <img class="carousel-image" src="images/pisces.jpg" alt="pisces symbol, https://www.freepik.com/free-vector/hand-drawn-style-zodiac-sign-pack_14661303.htm#query=aquarius&position=39&from_view=search&track=sph&uuid=e34bfda2-3709-46cc-a9b3-ab35178d0652 Image by Freepik"
+                        title="pisces symbol, Image by Freepik">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row"> <!--newsletter-->
+        <div class="col-md-8">
+            <h2>Want Daily Astrology? Join our newsletter!</h2>
+            <form action="/action_page.php">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" value="Lexy@gmail.com">
+                <input type="submit" value="Submit" id="test">
+            </form> 
+        </div>
+        <div class="col-md-4">
+            <p class="contact-info">Social Media</p>
+            <a href="https://www.instagram.com/"><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+            <a href="https://www.facebook.com/"><img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/></a>
+            <a href="https://www.tiktok.com/"><img width="48" height="48" src="https://img.icons8.com/color/48/tiktok--v2.png" alt="tiktok--v2"/></a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="l-ramos-hw2.js"></script> 
+  </body>

@@ -1,0 +1,48 @@
+@model Streaming1.ViewModels.ShowsVM
+
+@{
+    ViewBag.Title = "Shows";
+}
+<div class="overlay">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">What's Coming</h1>
+            <p class="lead">Streamly is the newest streaming platform designed to bring you closer to the content you love. With a vast library of movies, TV shows, documentaries, and exclusive original series, Streamly caters to every taste. Our user-friendly interface and personalized recommendations make it easier than ever to discover new favorites, whether you’re into thrilling dramas, laugh-out-loud comedies, or insightful documentaries. Streamly—your go-to for high-quality streaming, all in one place.</p>
+        </div>
+    </div>
+<br>
+    <div class="row modelRow">
+        <div class="col-md-3 countText"><p>@Model.Type.tv<br><span class="smallText">Shows</span></p> </div>
+        <div class="col-md-1 countText"><p>+</p></div>
+        <div class="col-md-3 countText"><p>@Model.Type.movie<br><span class="smallText">Movies</span></p> </div>
+        <div class="col-md-1 countText"><p>=</p></div>
+        <div class="col-md-3 countText"><p>@Model.Type.show<br><span class="smallText">Total options for you to choose from!</span></p></div>
+    </div>
+<br>
+    <div class="row modelRow">
+        <h3>Your Favorites Here!</h3>
+        <div class="col-md-4 modelText" id="Tmdb">
+            <h4>Highly Rated</h4>
+            <p>@Model.Popularity.Title <br>TMDB Score: @Model.Popularity.TmdbPopularity</p>
+            <p>@Model.Votes.Title <br>IMDB Votes: @Model.Votes.ImdbVotes</p>
+        </div>
+        <div class="col-md-4 modelText" id="genres">            
+            <h4 class="genreHeader">Genres</h4>
+            <ul class="list-group list-group-flush genre-list">
+                @foreach (var genre in Model.Genres)
+                {
+                    <li class="list-group-item">@genre.GenreString</li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-4 modelText">            
+            <h4>Directed By: @Model.PersonName</h4>
+            <ul class="list-group list-group-flush genre-list">
+                @foreach (var title in Model.ShowTitles)
+                {
+                    <li class="list-group-item">@title</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

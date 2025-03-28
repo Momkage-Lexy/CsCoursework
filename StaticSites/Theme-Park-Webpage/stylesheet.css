@@ -1,0 +1,113 @@
+/*Navbar*/
+.navbar-custom{
+    background-color: #D5CAD6;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand{
+    font-family: 'Moirai One', system-ui;
+    padding-left: 50px;
+}
+
+/*headers and paragraphs*/
+.Subtitles{
+    font-family: "Trebuchet MS";
+    text-align: center;
+}
+
+.description{
+    font-family: Arial;
+}
+
+/*contact and address*/
+.contact-container{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6d696a;
+    margin-top:20px;
+}
+
+.contact-row{
+    padding: 20px;
+}
+
+body{
+    background-color: #EFEFF0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Page 1*/
+
+.intro{
+    background-color: #6B5E62;
+    color: #ccc1c1;
+    padding: 50px;
+    text-align: center;
+}
+
+#intro-paragraph{
+    padding-top: 10px;
+}
+
+/*Page 2*/
+.dining-intro-container{
+    padding: 50px;
+    background-color: #6B5E62;
+    color: #ccc1c1;
+    margin-bottom: 50px;
+}
+
+.dining-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.dining-list-row{
+    border-bottom: 1px solid #D5CAD6;
+    padding: 10px;
+    color: #6d696a;
+}
+
+/*Page 3*/
+.attraction-intro{
+    color: #6d696a;
+    text-align: center;
+    margin: 50px;
+}
+
+.attraction-intro-col{
+    background-color: #6B5E62;
+    margin-bottom: 50px;
+    padding: 20px;
+    color: #ccc1c1;
+    text-align: justify;
+}
+
+#at{
+    font-size: 18px;
+}
+
+/*Page 4*/
+.pricing-container {
+    color: #6d696a;
+    margin: 50px;
+}
+
+.pricing-table{
+    color: #6d696a;
+    border: 3px solid #6B5E62;
+    
+}
+
+.pricing-table td, .pricing-table th, .faq-container{
+    color: #6d696a;
+}
+ 
+.pricing-table tr :nth-child(even) {
+    background-color: #D5CAD6;
+}

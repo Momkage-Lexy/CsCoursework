@@ -1,0 +1,26 @@
+@{
+    ViewBag.Title = "AddOrUpdate";
+}
+<form id="personForm" onsubmit="handleFormSubmit(event)">
+    <label>
+        <input type="radio" name="formMode" value="add" checked onchange="toggleFormMode()"> Add New Person
+    </label>
+    <label>
+        <input type="radio" name="formMode" value="update" onchange="toggleFormMode()"> Update Existing Person
+    </label>
+    <div id="updateFields" style="display: none;">
+        <label for="personId">Person ID:</label>
+        <input type="number" id="personId" name="personId" placeholder="Enter ID for update">
+    </div>
+    <div id="addFields">
+        <label for="justWatchPersonId">Just Watch Person ID:</label>
+        <input type="number" id="justWatchPersonId" name="justWatchPersonId" placeholder="Enter Just Watch Person ID">
+    </div>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+<div id="responseMessage"></div>

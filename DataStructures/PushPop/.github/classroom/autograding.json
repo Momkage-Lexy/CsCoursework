@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "01 Push should insert item at the top of stack",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_01\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "02 Push should update size property",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_02\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "03 Push should raise IndexError on a full stack",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_03\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "04 Pop should return same value stored in top item",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_04\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "05 Pop should update size property",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_05\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "06 Pop should raise IndexError on empty stack",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_06\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "07 Pop last item should result in empty stack",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_07\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "08 Clear should result in stack with empty property equal to true",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_08\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "09 Clear should update length",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_09\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "10 Stack should maintain the integrity of its data",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_10\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

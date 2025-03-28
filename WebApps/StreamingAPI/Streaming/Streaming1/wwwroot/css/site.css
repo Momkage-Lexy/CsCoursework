@@ -1,0 +1,133 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-image: url("/images/view-3d-family-watching-movie.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Quicksand", sans-serif;
+
+}
+
+#top-row {
+  padding-top: 2%;
+}
+
+#bottom-row {
+  text-align: center;
+}
+
+.link-button {
+  border: 2px solid rgb(55, 167, 177);
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom:1%;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(55, 167, 177);
+}
+
+.headerRow{
+  text-align: center;
+}
+
+#coming-soon {
+  color: black;
+  text-align: center;
+  font-size: 5em;
+}
+
+.genre-list {
+  max-height: 200px; 
+  overflow-y: auto;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.555);
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h3 {
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.countText {
+  font-size: 5em;
+  text-align: center;
+  line-height: 0.8em;
+}
+
+.smallText {
+  font-size: initial;
+  margin-top: -10%;
+  margin-top: 0.2em;
+}
+.show-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+.show-container h3 {
+  margin-top: 0;
+}
+
+#suggestions {
+  background-color: white;
+  overflow-y: scroll;
+  display: none;
+  max-height: 200px; 
+  z-index: 100; 
+  width: 30%;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer; 
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0; 
+}
+
+#shows {
+  background-color: white;
+  padding: 5%;
+  width: 30%;
+  overflow-y: scroll;
+  max-height: 200px; 
+  display: none;
+}
+
+#actorSearch {
+  width: 30%;
+}

@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "01 Resizing to a smaller size should update the length attribute",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_01\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "02 Resizing an array to a smaller size should not include data at the index equal to the new length",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_02\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "03 Resizing an array to a smaller size should not contain the item at the last index of the previous array sized",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_03\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "04 Resizing smaller should retain all of the data that fits within the new size",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_04\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "05 Resizing an array to a larger size should update the length attribute of the array",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_05\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "06 Resizing an array to a larger size should contain all of the original data",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_06\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "07 Resizing an array to a larger size should keep original data at the same index",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_07\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "08 Resizing an array to a larger size should extend the array with none values",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_08\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "09 Resizing to the same size should retain original data at same index",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_09\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "10 Resizing to the same size should retain the same data at the same index",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -k \"test_10\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

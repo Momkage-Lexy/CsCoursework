@@ -1,0 +1,12 @@
+# Start from Ubuntu as the base image
+FROM ubuntu
+
+# Set the working directory to the solution name
+WORKDIR /automate4
+
+# Copy the solution script and other required assets into the image
+COPY solution-script.sh /bin/
+COPY cars.txt Cars2.txt . 
+
+# Define the default command to run the shell script
+CMD ["/bin/bash", "/bin/solution-script.sh"]
